@@ -47,24 +47,38 @@ header {
   }
 }
 
-// the arrow test
+
+// the "chevron style":
+
 @arrow-height: 4em;
 
-.arrow-wrapper    {
-  height:@arrow-height;
-  overflow-x:hidden;
-  position:relative;
-  margin-bottom:1em;
+.arrow-wrapper {
+  height: @arrow-height;
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 1em;
 }
-.arrow {
-  width:2000px;
-  position:absolute;
-  left:50%;
-  margin-left:-1000px;
-  border-top:     @arrow-height solid @green-lightest;
-  border-bottom:  0px solid transparent;
-  border-left:    1000px solid transparent;
-  border-right:   1000px  solid transparent;
+.arrow-down {
+  width: 2000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  border-top: @arrow-height solid @green-lightest;
+  border-bottom: 0px solid transparent;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
+}
+// reverse the arrow:
 
+.arrow-up {
+  width: 2000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  border-top: 0px solid transparent;
+  border-bottom: @arrow-height solid @green-lightest;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
 }
+
 
