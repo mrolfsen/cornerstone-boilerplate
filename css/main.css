@@ -1,4 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:400,700,500|Roboto+Slab:400,700);
 /* ==========================================================================
    Getting it all together
    ========================================================================== */
@@ -8,6 +7,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(//fonts.googleapis.com/css?family=Roboto:400,700,500|Roboto+Slab:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -542,6 +542,24 @@ textarea {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .container {
   margin-right: auto;
@@ -1237,7 +1255,7 @@ header .logo img {
 header h1 {
   font: bold 3.4em/1.4 'Roboto Slab', serif;
   margin: 0;
-  color: #47914d;
+  color: #47914D;
   letter-spacing: 0.20em;
 }
 header p.intro {
@@ -1293,7 +1311,7 @@ header p.intro {
 .intro h2 {
   font: bold 2.1em/1.8 'Roboto Slab', serif;
   text-align: center;
-  color: #47914d;
+  color: #47914D;
 }
 .intro .plus {
   font-size: 2em;
@@ -1326,7 +1344,7 @@ header p.intro {
   color: rgba(159, 201, 162, 0.57);
   width: .6em;
   height: .7em;
-  background: #ffffff;
+  background: #fff;
   display: block;
   margin-right: -0.3em;
   margin-top: -0.36em;
@@ -1352,7 +1370,7 @@ header p.intro {
     color: rgba(159, 201, 162, 0.57);
     width: 1em;
     height: .7em;
-    background: #ffffff;
+    background: #fff;
     display: block;
     margin-right: -0.6em;
     margin-top: 0;
