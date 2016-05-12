@@ -5,10 +5,17 @@
 
 /* set everything to "box-sizing:border-box" –
  * the Grid won't work otherwise
+
+ * new notation - if anything is set to "content-box", it will be able to inherit
+ * this to it's child elements
  */
 
-* {
+
+html {
   box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /*
