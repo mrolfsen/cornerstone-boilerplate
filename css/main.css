@@ -372,6 +372,13 @@ html {
   line-height: 1.4;
 }
 /*
+ * Smooth them fonts
+ */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -438,9 +445,17 @@ textarea {
    ========================================================================== */
 /* set everything to "box-sizing:border-box" –
  * the Grid won't work otherwise
+
+ * new notation - if anything is set to "content-box", it will be able to inherit
+ * this to it's child elements
  */
-* {
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 /*
  * Hide visually and from screen readers:
@@ -1278,55 +1293,72 @@ header p.intro {
   height: 4em;
   overflow-x: hidden;
   position: relative;
-  margin-bottom: 1em;
 }
+/*
 .arrow-down {
   width: 2000px;
   position: absolute;
   left: 50%;
   margin-left: -1000px;
-  border-top: 4em solid rgba(159, 201, 162, 0.3);
+  border-top: @arrow-height solid @green-lightest;
   border-bottom: 0px solid transparent;
   border-left: 1000px solid transparent;
   border-right: 1000px solid transparent;
 }
-.arrow-up {
-  width: 2000px;
+
+*/
+.arrow-down {
+  width: 100%;
   position: absolute;
   left: 50%;
-  margin-left: -1000px;
+  /* margin-left: -1000px; */
+  border-top: 5vh solid rgba(159, 201, 162, 0.3);
+  border-bottom: 0px solid transparent;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  transform: translate(-50%);
+}
+.arrow-up {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  /* margin-left: -1000px; */
   border-top: 0px solid transparent;
   border-bottom: 4em solid rgba(159, 201, 162, 0.3);
   border-left: 1000px solid transparent;
   border-right: 1000px solid transparent;
+  transform: translate(-50%);
 }
 /* ===================================================
    The Intro
    =================================================== */
-.intro h3 {
+.introduction {
+  padding: 2em 0;
+}
+.introduction h3 {
   font: normal 1.8em/1.4 'Roboto Slab', serif;
   color: #61666a;
   text-align: center;
 }
-.intro h2 {
+.introduction h2 {
   font: bold 2.1em/1.8 'Roboto Slab', serif;
   text-align: center;
   color: #47914D;
 }
-.intro .plus {
+.introduction .plus {
   font-size: 2em;
   font-weight: bold;
   color: rgba(159, 201, 162, 0.57);
 }
-.intro .intro-1 p,
-.intro .intro-2 p {
+.introduction .intro-1 p,
+.introduction .intro-2 p {
   color: #61666a;
   padding: 1em 0;
 }
-.intro .intro-1 {
+.introduction .intro-1 {
   position: relative;
 }
-.intro .intro-1:before {
+.introduction .intro-1:before {
   content: "";
   border-right: 1px solid #ebebeb;
   position: absolute;
@@ -1334,7 +1366,7 @@ header p.intro {
   top: 0;
   height: 100%;
 }
-.intro .intro-1:after {
+.introduction .intro-1:after {
   content: "+";
   position: absolute;
   text-align: center;
@@ -1375,6 +1407,12 @@ header p.intro {
     margin-right: -0.6em;
     margin-top: 0;
   }
+}
+.footer-wrapper {
+  background: rgba(159, 201, 162, 0.3);
+  text-align: center;
+  padding-bottom: 1em;
+  text-transform: uppercase;
 }
 /* ==========================================================================
    Print styles.
