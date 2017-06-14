@@ -1340,10 +1340,20 @@ header p.intro {
   color: #61666a;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .introduction h3 {
+    font-size: 1.2em;
+  }
+}
 .introduction h2 {
   font: bold 2.1em/1.8 'Roboto Slab', serif;
   text-align: center;
   color: #47914D;
+}
+@media (max-width: 767px) {
+  .introduction h2 {
+    font-size: 1.7em;
+  }
 }
 .introduction .plus {
   font-size: 2em;
@@ -1382,7 +1392,7 @@ header p.intro {
   margin-top: -0.36em;
 }
 @media (max-width: 767px) {
-  .intro .intro-1:before {
+  .introduction .intro-1:before {
     border: none;
     border-bottom: 1px solid #ebebeb;
     right: 0;
@@ -1391,7 +1401,7 @@ header p.intro {
     width: 100%;
     height: auto;
   }
-  .intro .intro-1:after {
+  .introduction .intro-1:after {
     content: "+";
     position: absolute;
     text-align: center;
@@ -1412,7 +1422,10 @@ header p.intro {
   background: rgba(159, 201, 162, 0.3);
   text-align: center;
   padding-bottom: 1em;
-  text-transform: uppercase;
+}
+footer p {
+  font-size: .9em;
+  color: #47914D;
 }
 /* ==========================================================================
    Print styles.
@@ -1478,4 +1491,3 @@ header p.intro {
     page-break-after: avoid;
   }
 }
-/*# sourceMappingURL=main.css.map */
