@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="152" viewBox="0 0 132 152">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="#D8D8D8" points="66 0 132 38 132 114 66 152 0 114 0 38"/>
+    <polygon fill="#D8EADA" points="66 0 132 38 66 76 0 38"/>
+    <polygon fill="#BEDBC1" points="66 76 132 38 132 114 66 152"/>
+    <polygon fill="#CBE2CD" points="0 76 66 38 66 114 0 152" transform="matrix(-1 0 0 1 66 0)"/>
+    <g transform="translate(18 21)">
+      <polygon fill="#90C295" points="48 0 96 27.5 48 55 0 27.5"/>
+      <polygon fill="#61A767" points="48 55 96 27.5 96 82.5 48 110"/>
+      <polygon fill="#76B27B" points="0 55 48 27.5 48 82.5 0 110" transform="matrix(-1 0 0 1 48 0)"/>
+    </g>
+  </g>
+</svg>
