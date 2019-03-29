@@ -1,6 +1,7 @@
 /* ==========================================================================
    Getting it all together
    ========================================================================== */
+@import url(../scss/cornerstone/vendor/bootstrap-4-grid-master/css/grid.min.css);
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -8,7 +9,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(cornerstone/vendor/bootstrap-4-grid-master/grid-min.css);
 html {
   line-height: 1.15;
   /* 1 */
