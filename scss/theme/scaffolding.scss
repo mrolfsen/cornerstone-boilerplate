@@ -1,0 +1,18 @@
+// stretch the page full height of viewport
+html {
+  font-size:17px;
+}
+
+
+.wrapper-outer {
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+
+  .the-wrapper {
+    flex:1 1 auto;
+  }
+  footer {
+    flex:0 0 auto;
+  }
+}

@@ -2,17 +2,20 @@
    Getting it all together
    ========================================================================== */
 
-@import "../scss/cornerstone/vendor/bootstrap-4-grid-master/css/grid.min.css";
+//@import "../scss/cornerstone/vendor/bootstrap-4-grid-master/css/grid.min.css";
 
 @import "cornerstone/normalize";
 @import "cornerstone/basic-styles";
 @import "cornerstone/helperclasses";
 
+@import "cornerstone/vendor/bootstrap-4-grid-master/scss/grid";
+
 // User styles
-/*
+
 @import "theme/variables";
+@import "theme/scaffolding";
 @import "theme/header";
 @import "theme/introduction";
 @import "theme/footer";
-*/
+
 @import "cornerstone/print";

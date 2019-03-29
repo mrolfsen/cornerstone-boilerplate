@@ -1,4 +1,6 @@
-# cornerstone-boilerplate
-a starting point for small to intermediate web projects
+![Cornerstone Logo](icon.png "Cornerstone Logo") 
 
-this is still a work in progress...
+# Cornerstone-Boilerplate V1.1
+a starting point for small to intermediate web projects.
+
+updated to bootstrap 4 grid and HTML5 Boilerplate 6.1.0.
