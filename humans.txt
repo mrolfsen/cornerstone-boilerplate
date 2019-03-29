@@ -4,12 +4,13 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Michael Rolfsen -- Designer -- @michaelsupdates
 
 # THANKS
 
-    <name>
+    the HTML5 Boilerplate Team, the Bootstrap Team at Twitter.
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, bootstrap 4 grid
